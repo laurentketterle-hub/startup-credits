@@ -1,0 +1,64 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_g1xx0p09bkv1dz121r3s2rz5yh
+slug: metabase
+slug_aliases: []
+name: Metabase
+domains:
+  - value: metabase.com
+    role: primary
+    valid_from: 2026-08-02T16:00:00Z
+category: analytics
+description: Open-source business intelligence platform. Connect to your database and build charts, dashboards, and embedded analytics in minutes.
+links:
+  site: https://www.metabase.com
+sources:
+  - source_id: src_e72e0d44bc7a10d1675939ecfcd266db4fc0d800f62f85ed34b14ca4ef10730c
+    url: https://www.metabase.com/startups/
+  - source_id: src_1215f55c0d56d2d304ac49fe3016b2978cd4c0cf00d7ffd7789f5d4b6f9ae055
+    url: https://www.metabase.com/pricing/
+programs: []
+offers:
+  - offer_id: off_97v17np9hb95qkhx4jtpp3g512
+    offer_slug: startup-discount
+    offer_slug_aliases: []
+    access:
+      availability: public
+      method: apply
+      url: https://www.metabase.com/startups/
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: 50% off Metabase Cloud Pro and Enterprise plans.
+          kind: discount
+          discount:
+            percent: 50
+            applies_to:
+              - plan_pro
+              - plan_enterprise
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: funding_max
+            currency: USD
+            value: 5000000
+            statement: Startup has raised less than $5M in total funding.
+          - criterion_id: cri_02
+            kind: employee_max
+            value: 25
+            statement: Startup has fewer than 25 employees.
+    lifecycle:
+      effective_from: 2026-08-02T16:00:00Z
+      status: active
+    roles:
+      terms_authority_entity_id: ent_g1xx0p09bkv1dz121r3s2rz5yh
+      access_operator_entity_id: ent_g1xx0p09bkv1dz121r3s2rz5yh
+    summary: Qualifying startups with less than $5M in funding and under 25 employees receive 50% off Metabase Cloud Pro and Enterprise plans.
+    terms_url: https://www.metabase.com/startups/
+    title: 50% Off for Startups
+    source_ids:
+      - src_e72e0d44bc7a10d1675939ecfcd266db4fc0d800f62f85ed34b14ca4ef10730c
+      - src_1215f55c0d56d2d304ac49fe3016b2978cd4c0cf00d7ffd7789f5d4b6f9ae055
