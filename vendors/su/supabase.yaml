@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01KZ1T2N7SREQGVVPZK8JD03NT
+slug: supabase
+slug_aliases: []
+name: Supabase
+domains:
+  - value: supabase.com
+    role: primary
+    valid_from: 2026-08-02T00:00:00.000Z
+category: database
+description: Supabase is the open-source Firebase alternative, providing a managed PostgreSQL database, authentication, storage, edge functions, and realtime subscriptions.
+links:
+  site: https://supabase.com
+sources:
+  - source_id: src_54345f5dd7fdd6e27ac69cea257e68cbd84bdcb7991e56430f44642acc79639d
+    url: https://supabase.com/solutions/startups
+programs: []
+offers:
+  - offer_id: off_01KZ1T2N7T4Q1ACH31SMDB6HVM
+    offer_slug: supabase-startup-program
+    offer_slug_aliases: []
+    title: Supabase Startup Program
+    summary: Eligible startups can receive up to $3,000 in platform credits plus six months of the Team plan free (approximately $3,600 value), along with partner perks across the Supabase ecosystem.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-02T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $3,000 in credits plus 6 months Team plan free (~$3,600 value)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup at pre-seed to Series A stage, apply through an approved accelerator, VC, or platform partner, have not previously received Supabase startup credits, and provide proof of affiliation.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01KZ1T2N7SREQGVVPZK8JD03NT
+      access_operator_entity_id: ent_01KZ1T2N7SREQGVVPZK8JD03NT
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/solutions/startups
+    source_ids:
+      - src_54345f5dd7fdd6e27ac69cea257e68cbd84bdcb7991e56430f44642acc79639d
