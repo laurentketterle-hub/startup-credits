@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz4wbcjqcr9vzfgyjcazd3hn
+slug: dronahq
+slug_aliases: []
+name: DronaHQ
+domains:
+  - value: dronahq.com
+    role: primary
+    valid_from: 2026-08-03T22:36:44.504Z
+category: devtools-other
+description: DronaHQ is a low-code platform for building internal tools, dashboards, forms, workflows, and custom applications.
+links:
+  site: https://www.dronahq.com
+sources:
+  - source_id: src_f1ecc6e4c082ecf85df50414e8a8b240ee01457192293ea2e7be3233a6a3e0df
+    url: https://www.dronahq.com/startup-program/
+programs:
+  - program_id: prg_01kz4wbcjrd9fmq30m6h3wjm73
+    program_slug: dronahq-startup-program
+    program_slug_aliases: []
+    title: DronaHQ Startup Program
+    summary: DronaHQ's startup program gives eligible early-stage companies platform credits, plan flexibility, and engineering support.
+    source_ids:
+      - src_f1ecc6e4c082ecf85df50414e8a8b240ee01457192293ea2e7be3233a6a3e0df
+offers:
+  - offer_id: off_01kz4wbcjr844vypy2pv9escfg
+    program_id: prg_01kz4wbcjrd9fmq30m6h3wjm73
+    offer_slug: dronahq-startup-credits
+    offer_slug_aliases: []
+    title: DronaHQ Startup Credits
+    summary: Eligible startups can receive up to $15,000 in DronaHQ platform credits, usable for up to one year on any user-, usage-, or developer-based plan.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T22:36:44.504Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Up to $15,000 in DronaHQ platform credits
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        criterion_id: cri_01
+        kind: manual
+        reason: vendor-discretion
+        statement: Startup must be incorporated, less than 3 years into operations, have raised less than $10 million, be new to DronaHQ, and have publicly verifiable equity funding up to Series A.
+    roles:
+      terms_authority_entity_id: ent_01kz4wbcjqcr9vzfgyjcazd3hn
+      access_operator_entity_id: ent_01kz4wbcjqcr9vzfgyjcazd3hn
+    access:
+      availability: public
+      method: form
+      url: https://www.dronahq.com/startup-program/
+    source_ids:
+      - src_f1ecc6e4c082ecf85df50414e8a8b240ee01457192293ea2e7be3233a6a3e0df
