@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz3gb24fbxeg3mg2vfzbmkcc
+slug: figma
+slug_aliases: []
+name: Figma
+domains:
+  - value: figma.com
+    role: primary
+    valid_from: 2026-08-03T00:00:00.000Z
+category: design
+description: Figma is the leading collaborative design platform where teams build and ship better products together, from idea to implementation.
+links:
+  site: https://www.figma.com
+sources:
+  - source_id: src_cae730e2b1d71c404131b7f6c4fcfd53a2c1b8bc08f9f1be14314d15cad17406
+    url: https://www.figma.com/startups/
+programs: []
+offers:
+  - offer_id: off_01kz3gb24nvxtm95k0rpmqydzr
+    offer_slug: figma-for-startups
+    offer_slug_aliases: []
+    title: Figma for Startups
+    summary: Eligible startups get the Figma Professional plan free for 12 months (up to 15 editor seats), plus access to Figma AI features, Dev Mode, and premium prototyping tools.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T00:00:00.000Z
+    economics:
+      consideration:
+        kind: free
+        description: Free for 12 months for qualifying startups.
+      benefits:
+        - benefit_id: ben_primary
+          description: Figma Professional plan free for 12 months (normally $15/editor/month, up to 15 seats — up to $2,700 value)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup with fewer than 50 employees, under 5 years old, have raised less than $10M in funding, have a public website, and not be a current Figma paying customer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz3gb24fbxeg3mg2vfzbmkcc
+      access_operator_entity_id: ent_01kz3gb24fbxeg3mg2vfzbmkcc
+    access:
+      availability: public
+      method: form
+      url: https://www.figma.com/startups/
+    source_ids:
+      - src_cae730e2b1d71c404131b7f6c4fcfd53a2c1b8bc08f9f1be14314d15cad17406
