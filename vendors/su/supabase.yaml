@@ -1,0 +1,59 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_0e4sc3tz708nqbep37mqj786j0
+slug: supabase
+slug_aliases: []
+name: Supabase
+domains:
+  - value: supabase.com
+    role: primary
+    valid_from: 2026-08-03T17:00:00.000Z
+category: databases
+description: Supabase is the open source Firebase alternative providing Postgres database, authentication, storage, edge functions, and realtime subscriptions.
+links:
+  site: https://supabase.com
+sources:
+  - source_id: src_1dabd9892fe5159bef81067d18d1b1dd6244b1491545a594f6bcec2b402641d5
+    url: https://supabase.com/startups
+programs:
+  - program_id: prg_33rcbtyv1d6bza9vzm2nx02cd5
+    program_slug: supabase-for-startups
+    program_slug_aliases: []
+    title: Supabase for Startups
+    description: Supabase for Startups provides credits, mentorship, and resources to help early-stage companies build on Supabase.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T17:00:00.000Z
+    source_ids:
+      - src_1dabd9892fe5159bef81067d18d1b1dd6244b1491545a594f6bcec2b402641d5
+offers:
+  - offer_id: off_5byhg5vxwraf2grexacf5b27v4
+    offer_slug: supabase-startup-credits
+    offer_slug_aliases: []
+    title: Supabase Startup Credits
+    summary: Qualifying startups can receive up to $25,000 in Supabase credits giving access to Postgres, Auth, Storage, Edge Functions, and Realtime.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-03T17:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $25,000 in Supabase credits
+          kind: credit
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualifying startup, typically with less than Series A funding, and apply through the Supabase for Startups program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0e4sc3tz708nqbep37mqj786j0
+      access_operator_entity_id: ent_0e4sc3tz708nqbep37mqj786j0
+    access:
+      availability: public
+      method: form
+      url: https://supabase.com/startups
+    source_ids:
+      - src_1dabd9892fe5159bef81067d18d1b1dd6244b1491545a594f6bcec2b402641d5
