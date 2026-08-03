@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2sy6bvv1em9bwzffnw3w7n
+slug: pagerduty
+slug_aliases: []
+name: PagerDuty
+domains:
+  - value: pagerduty.com
+    role: primary
+    valid_from: 2026-08-03T00:00:00.000Z
+category: observability
+description: PagerDuty is an incident management platform that provides real-time operations, on-call management, and response orchestration trusted by thousands of startups and enterprises to prevent downtime and build customer trust.
+links:
+  site: https://www.pagerduty.com
+sources:
+  - source_id: src_1b830547d6a5e8306a61847512917a25c5c9663d6c5215e74c5c395ed8453cb8
+    url: https://www.pagerduty.com/startups/
+programs: []
+offers:
+  - offer_id: off_01kz2sy6bvkyaf71qc0ambr5ev
+    offer_slug: pagerduty-for-startups
+    offer_slug_aliases: []
+    title: PagerDuty for Startups
+    summary: Qualified startups get exclusive benefits including pre-configured incident management workflows, fast onboarding with no dedicated ops team required, and access to PagerDuty's platform integrations across the modern stack.
+    lifecycle:
+      status: active
+      effective_from: 2026-03-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Exclusive startup benefits with pre-configured workflows and platform integrations
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a qualified startup; apply through the PagerDuty for Startups program form on the website.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz2sy6bvv1em9bwzffnw3w7n
+      access_operator_entity_id: ent_01kz2sy6bvv1em9bwzffnw3w7n
+    access:
+      availability: public
+      method: form
+      url: https://www.pagerduty.com/startups/
+    source_ids:
+      - src_1b830547d6a5e8306a61847512917a25c5c9663d6c5215e74c5c395ed8453cb8
