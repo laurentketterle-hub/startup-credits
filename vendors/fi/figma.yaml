@@ -26,7 +26,7 @@ offers:
       effective_from: 2026-08-03T00:00:00.000Z
     economics:
       consideration:
-        kind: free
+        kind: none
         description: Free for 12 months for qualifying startups.
       benefits:
         - benefit_id: ben_primary
