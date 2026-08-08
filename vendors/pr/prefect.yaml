@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv8re7smm62ftp1tsbcv89
+  slug: prefect
+  name: Prefect
+  website: https://www.prefect.io
+  description: >-
+    Modern workflow orchestration platform for building, running, and monitoring data pipelines.
+  categories:
+    - data
+    - devops
+
+programs:
+  - id: prg_01kzhv8re7ps2ekyp2e8jay2c9
+    name: Prefect Startup Program
+    description: >-
+      Access to Prefect Cloud with startup-friendly pricing and dedicated onboarding support.
+    source_id: src_01kzhv8re7q1e65xxc4nycd5qs
+    eligibility:
+      - Startups with less than $5M in funding
+
+offers:
+  - id: off_01kzhv8re74v4jv8pgp1ag8bvk
+    program_id: prg_01kzhv8re7ps2ekyp2e8jay2c9
+    name: Startup Credits
+    summary: >-
+      $5,000 in Prefect Cloud credits for qualifying early-stage startups
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv8re7q1e65xxc4nycd5qs
+    category: data
+
+sources:
+  - id: src_01kzhv8re7q1e65xxc4nycd5qs
+    url: https://www.prefect.io/startups
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
