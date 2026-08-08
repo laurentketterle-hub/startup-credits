@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv837jyzhvn9ydbez2vkcm
+  slug: porter
+  name: Porter
+  website: https://porter.run
+  description: >-
+    Kubernetes platform that automates infrastructure management on AWS, GCP, and Azure.
+  categories:
+    - kubernetes
+    - cloud
+
+programs:
+  - id: prg_01kzhv837jsftvec7mmymtvs4y
+    name: Porter Startup Program
+    description: >-
+      Free Porter credits for startups to deploy and manage Kubernetes workloads without DevOps overhead.
+    source_id: src_01kzhv837jqjr65wmaqjkr3xk2
+    eligibility:
+      - Startups with less than $10M in funding
+
+offers:
+  - id: off_01kzhv837jsghhzffgg3b266ea
+    program_id: prg_01kzhv837jsftvec7mmymtvs4y
+    name: Free Porter Credits
+    summary: >-
+      $5,000 in Porter platform credits for early-stage startups
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv837jqjr65wmaqjkr3xk2
+    category: cloud
+
+sources:
+  - id: src_01kzhv837jqjr65wmaqjkr3xk2
+    url: https://porter.run/startups
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
