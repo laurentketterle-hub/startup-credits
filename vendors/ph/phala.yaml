@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvcq17s155etxkr7z6f4b6
+  slug: phala
+  name: Phala Network
+  website: https://phala.network
+  description: >-
+    Decentralized cloud computing network offering secure, privacy-preserving computation.
+  categories:
+    - blockchain
+    - cloud
+
+programs:
+  - id: prg_01kzhvcq1763f9yfdckamfqazh
+    name: Phala Startup Program
+    description: >-
+      Credits for startups building privacy-preserving applications on Phala Network.
+    source_id: src_01kzhvcq172w7gr6g39by23rjv
+    eligibility:
+      - Web3 startups building on Phala or Substrate
+
+offers:
+  - id: off_01kzhvcq17dchpcnyws5qm9nv3
+    program_id: prg_01kzhvcq1763f9yfdckamfqazh
+    name: Builders Grant
+    summary: >-
+      Up to $25,000 in PHA tokens and cloud credits for qualifying projects
+    economics:
+      type: credit
+      value: 25000
+      currency: USD
+    duration: 6 months
+    source_id: src_01kzhvcq172w7gr6g39by23rjv
+    category: blockchain
+
+sources:
+  - id: src_01kzhvcq172w7gr6g39by23rjv
+    url: https://phala.network
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
