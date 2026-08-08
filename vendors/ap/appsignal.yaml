@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv8hg60wfvk2e33qbtwqy6
+  slug: appsignal
+  name: AppSignal
+  website: https://www.appsignal.com
+  description: >-
+    Application performance monitoring and error tracking for Ruby, Elixir, Node.js applications.
+  categories:
+    - monitoring
+    - devops
+
+programs:
+  - id: prg_01kzhv8hg6fhjas1a9rqb211by
+    name: AppSignal Startup Program
+    description: >-
+      Free AppSignal monitoring for qualifying startups with priority support.
+    source_id: src_01kzhv8hg65dbw847pcar5112a
+    eligibility:
+      - Startups with less than 10 employees
+
+offers:
+  - id: off_01kzhv8hg6ctkbv6cawvv79xmv
+    program_id: prg_01kzhv8hg6fhjas1a9rqb211by
+    name: Free Startup Plan
+    summary: >-
+      AppSignal monitoring free for 12 months for qualifying startups
+    economics:
+      type: credit
+      value: 3000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv8hg65dbw847pcar5112a
+    category: monitoring
+
+sources:
+  - id: src_01kzhv8hg65dbw847pcar5112a
+    url: https://www.appsignal.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
