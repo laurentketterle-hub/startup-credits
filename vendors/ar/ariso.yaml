@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv7w8wyq6d2jy9kx9hc901
+  slug: ariso
+  name: Ariso
+  website: https://ariso.ai
+  description: >-
+    AI-powered work partner that lives where work happens, helping individuals and teams stay focused.
+  categories:
+    - ai
+    - productivity
+
+programs:
+  - id: prg_01kzhv7w8w9p4bvvhd8wh0293v
+    name: Ariso Startup Program
+    description: >-
+      Access to Ariso AI work partner platform with priority support and dedicated onboarding.
+    source_id: src_01kzhv7w8wba7291bb4nvp9qd7
+    eligibility:
+      - Early-stage startups with less than 20 employees
+
+offers:
+  - id: off_01kzhv7w8w9avn33ghgnmqmded
+    program_id: prg_01kzhv7w8w9p4bvvhd8wh0293v
+    name: Free Team Plan
+    summary: >-
+      12 months free access to Ariso Team plan for up to 10 users
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv7w8wba7291bb4nvp9qd7
+    category: saas
+
+sources:
+  - id: src_01kzhv7w8wba7291bb4nvp9qd7
+    url: https://ariso.ai
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
