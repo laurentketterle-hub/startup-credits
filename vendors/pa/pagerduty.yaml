@@ -8,7 +8,7 @@ domains:
     role: primary
     valid_from: 2026-08-03T00:00:00.000Z
 category: observability
-description: PagerDuty is an incident management platform that provides real-time operations, on-call management, and response orchestration trusted by thousands of startups and enterprises to prevent downtime and build customer trust.
+description: Incident management platform for real-time operations, on-call management, and response orchestration.
 links:
   site: https://www.pagerduty.com
 sources:
