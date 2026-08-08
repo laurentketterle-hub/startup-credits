@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvc91sx85cqqhs7a9nrcyb
+  slug: mollie
+  name: Mollie
+  website: https://www.mollie.com
+  description: >-
+    European payment service provider offering a single API for all major payment methods.
+  categories:
+    - payments
+    - fintech
+
+programs:
+  - id: prg_01kzhvc91s1yjzdhd4cx0kqzsb
+    name: Mollie Startup Program
+    description: >-
+      Special pricing and support for startups integrating Mollie payment services.
+    source_id: src_01kzhvc91sk0fzeabdxk4edsyq
+    eligibility:
+      - Startups registered in the EU/EEA with less than 50 employees
+
+offers:
+  - id: off_01kzhvc91sjsyxhq9n89c26za4
+    program_id: prg_01kzhvc91s1yjzdhd4cx0kqzsb
+    name: Startup Pricing
+    summary: >-
+      Reduced transaction fees and priority onboarding for qualifying startups
+    economics:
+      type: discount
+      value: 3000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhvc91sk0fzeabdxk4edsyq
+    category: fintech
+
+sources:
+  - id: src_01kzhvc91sk0fzeabdxk4edsyq
+    url: https://www.mollie.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
