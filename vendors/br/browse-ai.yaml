@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv8dsv291j1420ejr9xg6k
+  slug: browse-ai
+  name: Browse AI
+  website: https://www.browse.ai
+  description: >-
+    No-code web data extraction and monitoring platform that can turn any website into an API.
+  categories:
+    - data
+    - automation
+
+programs:
+  - id: prg_01kzhv8dsvrsqxw04g02m1epzn
+    name: Browse AI Startup Program
+    description: >-
+      Access to Browse AI platform for web scraping and data extraction with startup-friendly pricing.
+    source_id: src_01kzhv8dsv5nqggabs4vd7enjc
+    eligibility:
+      - Startups with less than $2M in revenue
+
+offers:
+  - id: off_01kzhv8dsvh5tzhpbn8wcztdns
+    program_id: prg_01kzhv8dsvrsqxw04g02m1epzn
+    name: Startup Credits
+    summary: >-
+      $1,000 in Browse AI credits for data extraction and monitoring
+    economics:
+      type: credit
+      value: 1000
+      currency: USD
+    duration: 6 months
+    source_id: src_01kzhv8dsv5nqggabs4vd7enjc
+    category: data
+
+sources:
+  - id: src_01kzhv8dsv5nqggabs4vd7enjc
+    url: https://www.browse.ai
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
