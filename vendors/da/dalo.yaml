@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvckkyschr0t8qp3kv69w1
+  slug: dalo
+  name: Dalo
+  website: https://www.dalo.com
+  description: >-
+    AI-powered customer experience and engagement platform for digital businesses.
+  categories:
+    - ai
+    - customer-engagement
+
+programs:
+  - id: prg_01kzhvckkyfqfg5w3fzxwr80a6
+    name: Dalo for Startups
+    description: >-
+      AI customer experience platform for startups to engage and retain users.
+    source_id: src_01kzhvckkybdwtxvh95jtexvp3
+    eligibility:
+      - Startups with less than $5M in revenue
+
+offers:
+  - id: off_01kzhvckkytk7rwwfgjcexgfrm
+    program_id: prg_01kzhvckkyfqfg5w3fzxwr80a6
+    name: Startup Plan
+    summary: >-
+      Free Dalo Business plan for 12 months with AI customer engagement tools
+    economics:
+      type: credit
+      value: 6000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhvckkybdwtxvh95jtexvp3
+    category: saas
+
+sources:
+  - id: src_01kzhvckkybdwtxvh95jtexvp3
+    url: https://www.dalo.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
