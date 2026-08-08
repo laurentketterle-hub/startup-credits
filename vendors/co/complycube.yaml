@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv95rcrkmaw0qt12mgcpdj
+  slug: complycube
+  name: ComplyCube
+  website: https://www.complycube.com
+  description: >-
+    AI-powered identity verification and KYC/AML compliance platform for fintech businesses.
+  categories:
+    - security
+    - compliance
+
+programs:
+  - id: prg_01kzhv95rcd7cfrn9dz3007kqc
+    name: ComplyCube Startup Program
+    description: >-
+      Free identity verification checks and KYC/AML compliance tools for early-stage startups.
+    source_id: src_01kzhv95rcgrz3gwjmymc1zqxz
+    eligibility:
+      - Early-stage fintech and regulated startups
+
+offers:
+  - id: off_01kzhv95rc6fg9ewsk4pmx5nbe
+    program_id: prg_01kzhv95rcd7cfrn9dz3007kqc
+    name: Free KYC Checks
+    summary: >-
+      100 free identity verification and KYC checks per month for 12 months
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv95rcgrz3gwjmymc1zqxz
+    category: security
+
+sources:
+  - id: src_01kzhv95rcgrz3gwjmymc1zqxz
+    url: https://www.complycube.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
