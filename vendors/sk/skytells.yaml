@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvc5q8wd5yrtwk86rshp73
+  slug: skytells
+  name: Skytells
+  website: https://skytells.io
+  description: >-
+    AI-driven cloud infrastructure platform offering scalable computing and storage solutions.
+  categories:
+    - cloud
+    - ai
+
+programs:
+  - id: prg_01kzhvc5q8my3fhmjs8wawhv22
+    name: Skytells Digital Start-up Program
+    description: >-
+      Cloud infrastructure and AI credits for startups building on the Skytells platform.
+    source_id: src_01kzhvc5q8yq1b33fcwmz6txhm
+    eligibility:
+      - Startups under 5 years old with less than $10M funding
+
+offers:
+  - id: off_01kzhvc5q8zzpx9nnh6xbv31ts
+    program_id: prg_01kzhvc5q8my3fhmjs8wawhv22
+    name: Startup Credits
+    summary: >-
+      $5,000 in Skytells platform credits for cloud and AI services
+    economics:
+      type: credit
+      value: 5000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhvc5q8yq1b33fcwmz6txhm
+    category: cloud
+
+sources:
+  - id: src_01kzhvc5q8yq1b33fcwmz6txhm
+    url: https://skytells.io
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
