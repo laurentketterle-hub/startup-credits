@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv7zqacj6hmkyze04m6882
+  slug: cloud-66
+  name: Cloud 66
+  website: https://www.cloud66.com
+  description: >-
+    DevOps platform for deploying and managing applications on any cloud provider.
+  categories:
+    - devops
+    - cloud
+
+programs:
+  - id: prg_01kzhv7zqa1fwdnqtpjh3c28cw
+    name: Cloud 66 Startup Program
+    description: >-
+      Discounted DevOps platform access for startups to deploy and manage applications on any cloud.
+    source_id: src_01kzhv7zqa5xetf56vwhyjgzp8
+    eligibility:
+      - Startups with less than $3M in funding
+
+offers:
+  - id: off_01kzhv7zqap0eyy3da9m0m9h3v
+    program_id: prg_01kzhv7zqa1fwdnqtpjh3c28cw
+    name: Startup Discount
+    summary: >-
+      50% discount on Cloud 66 plans for the first 12 months
+    economics:
+      type: discount
+      value: 3000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv7zqa5xetf56vwhyjgzp8
+    category: devops
+
+sources:
+  - id: src_01kzhv7zqa5xetf56vwhyjgzp8
+    url: https://www.cloud66.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
