@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhv7rj1sdsrjzr2t1f78t0d
+  slug: exe-dev
+  name: exe.dev
+  website: https://exe.dev
+  description: >-
+    Modern VPS platform with TLS, SSH, and private HTTPS front door for developers.
+  categories:
+    - cloud
+    - infrastructure
+
+programs:
+  - id: prg_01kzhv7rj17990pfwesdasmtwf
+    name: exe.dev Startup Program
+    description: >-
+      Get $10,000 in exe.dev credits for your startup. Build on a modern VPS without burning runway on infra.
+    source_id: src_01kzhv7rj1h8hqt6tvpg2gtq53
+    eligibility:
+      - Startups under 3 years old with less than $5M in funding
+
+offers:
+  - id: off_01kzhv7rj1yfxmqya4rm66y171
+    program_id: prg_01kzhv7rj17990pfwesdasmtwf
+    name: $10,000 in Cloud Credits
+    summary: >-
+      $10,000 in exe.dev platform credits valid for 12 months
+    economics:
+      type: credit
+      value: 10000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhv7rj1h8hqt6tvpg2gtq53
+    category: cloud
+
+sources:
+  - id: src_01kzhv7rj1h8hqt6tvpg2gtq53
+    url: https://exe.dev/startup
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
