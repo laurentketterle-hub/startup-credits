@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvcg1w2gb3tzd0t3p4d3fr
+  slug: compass-ai
+  name: Compass AI
+  website: https://www.getcompass.ai
+  description: >-
+    AI-powered team intelligence platform for engineering velocity and developer productivity insights.
+  categories:
+    - ai
+    - developer-tools
+
+programs:
+  - id: prg_01kzhvcg1wx5wm5h121v10pghc
+    name: Compass AI Startup Program
+    description: >-
+      Free access to Compass AI for startups to optimize engineering team productivity.
+    source_id: src_01kzhvcg1wnt18znw1gpqkzy3n
+    eligibility:
+      - Startups with 5-50 engineers
+
+offers:
+  - id: off_01kzhvcg1we39byd10fqcpsppm
+    program_id: prg_01kzhvcg1wx5wm5h121v10pghc
+    name: Free Team Access
+    summary: >-
+      12 months free Compass AI Team plan for up to 25 engineers
+    economics:
+      type: credit
+      value: 8000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhvcg1wnt18znw1gpqkzy3n
+    category: saas
+
+sources:
+  - id: src_01kzhvcg1wnt18znw1gpqkzy3n
+    url: https://www.getcompass.ai
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
