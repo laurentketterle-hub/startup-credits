@@ -1,0 +1,40 @@
+entity:
+  id: ent_01kzhvc1y6anq7kdhqh2kh9w5n
+  slug: hostman
+  name: Hostman
+  website: https://hostman.com
+  description: >-
+    Cloud hosting platform with managed services, deployments, and databases for development teams.
+  categories:
+    - cloud
+    - hosting
+
+programs:
+  - id: prg_01kzhvc1y6dqxj2xrwe437jv73
+    name: Hostman Startup Program
+    description: >-
+      Cloud hosting credits for early-stage startups to deploy and scale applications.
+    source_id: src_01kzhvc1y7hz6ck9jfyfsx38vj
+    eligibility:
+      - Startups under 3 years old
+
+offers:
+  - id: off_01kzhvc1y6qng2p6c092p30dv9
+    program_id: prg_01kzhvc1y6dqxj2xrwe437jv73
+    name: Cloud Credits
+    summary: >-
+      $3,000 in Hostman cloud hosting credits for 12 months
+    economics:
+      type: credit
+      value: 3000
+      currency: USD
+    duration: 12 months
+    source_id: src_01kzhvc1y7hz6ck9jfyfsx38vj
+    category: cloud
+
+sources:
+  - id: src_01kzhvc1y7hz6ck9jfyfsx38vj
+    url: https://hostman.com
+    retrieved: "2025-08-09"
+    type: webpage
+    language: en
