@@ -27,7 +27,7 @@ offers:
     program_id: prg_01kz4xawkrqz4e4ageddvcz4k7
     offer_slug: free-gradium-m-plan-for-six-months
     offer_slug_aliases: []
-    title: "Gradium for Startups: Free Voice AI Credits"
+    title: "Gradium for Startups: Free Voice API Credits (Seed/Series A, <25 employees, voice-first product)"
     summary: Accepted startups receive 54 million Gradium credits worth over $2,000 and full M-plan API access for six months, plus engineering support and early model access.
     lifecycle:
       status: active
