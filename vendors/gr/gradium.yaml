@@ -72,12 +72,16 @@ offers:
           - criterion_id: cri_03
             kind: manual
             reason: external-verification
-            statement: Voice must be a core component of the applicant's product with a clear monetization strategy.
+            statement: Voice must be a core component of the applicant's product.
           - criterion_id: cri_04
             kind: manual
             reason: external-verification
-            statement: One-off projects are not eligible.
+            statement: Applicant must have a clear monetization strategy.
           - criterion_id: cri_05
+            kind: manual
+            reason: external-verification
+            statement: One-off projects are not eligible.
+          - criterion_id: cri_06
             kind: manual
             reason: vendor-discretion
             statement: Applications are subject to Gradium review and approval.
