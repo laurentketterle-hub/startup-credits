@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_0stv2ba173zcrxhqc8wjxk6rn2
+slug: gradium
+slug_aliases: []
+name: Gradium
+domains:
+  - value: gradium.ai
+    role: primary
+    valid_from: 2026-08-09T10:00:00.000Z
+category: ai-ml
+description: Gradium provides a real-time voice AI platform offering text-to-speech, speech-to-text, voice cloning, and voice agent APIs for developers and startups.
+links:
+  site: https://gradium.ai
+sources:
+  - source_id: src_675dcf09e8ef0b4dd1eac22f9a6d0be8c2bbe01c444530e97c75388a5faceb49
+    url: https://gradium.ai/startups
+programs:
+  - program_id: prg_35ksnxs4vvse64809xja15qeey
+    program_slug: gradium-startup-program
+    program_slug_aliases: []
+    title: Gradium Startup Program
+    summary: Get $2,000+ in free voice AI credits with 6 months of full API access, direct engineering support, and early access to new models for seed-funded startups.
+    source_ids:
+      - src_675dcf09e8ef0b4dd1eac22f9a6d0be8c2bbe01c444530e97c75388a5faceb49
+offers:
+  - offer_id: off_29cqjaxq18y4zw3pj0st5aq941
+    program_id: prg_35ksnxs4vvse64809xja15qeey
+    offer_slug: startup-credits
+    offer_slug_aliases:
+      - gradium-startup-program
+    title: $2,000+ in Free Voice AI Credits
+    summary: "$2,000+ in free voice AI API credits, 6 months of full API access on the M plan (up to 1,200 hours TTS or 4,998 hours STT/month), direct engineering support, and early access to new models and research previews."
+    lifecycle:
+      status: active
+      effective_from: 2026-08-09T08:00:00.000Z
+    economics:
+      consideration:
+        kind: variable
+        description: Recipients must be seed-funded startups building voice-first products. Applications are reviewed and acceptance decisions are communicated post-application.
+      benefits:
+        - benefit_id: ben_primary
+          description: $2,000+ in free API credits, 6 months full M plan access, direct engineering support, early access to new models and research previews
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Open to seed-funded startups building voice-first products. Applications are reviewed manually.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_0stv2ba173zcrxhqc8wjxk6rn2
+      access_operator_entity_id: ent_0stv2ba173zcrxhqc8wjxk6rn2
+    access:
+      availability: public
+      method: form
+      url: https://gradium.ai/startups
+    source_ids:
+      - src_675dcf09e8ef0b4dd1eac22f9a6d0be8c2bbe01c444530e97c75388a5faceb49
