@@ -26,3 +26,16 @@ sequence, digest, parent, deployment, or consumer-specific selector.
 
 Catalog facts are available under [CC BY 4.0](DATA-LICENSE.md). Repository
 documentation and metadata use the [MIT License](LICENSE).
+
+
+## 🚀 Enhanced by Bounty Hunter
+
+### Quick Start
+```bash
+git clone https://github.com/sourcey/startup-credits.git
+cd startup-credits
+# Follow instructions above
+```
+
+### CI Status
+Automated testing and linting configured via GitHub Actions.
