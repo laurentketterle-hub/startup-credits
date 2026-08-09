@@ -27,7 +27,7 @@ offers:
     program_id: prg_01kz4xawkrqz4e4ageddvcz4k7
     offer_slug: free-gradium-m-plan-for-six-months
     offer_slug_aliases: []
-    title: Free Gradium M Plan for Six Months
+    title: "Gradium for Startups: Free Voice AI Credits"
     summary: Accepted startups receive 54 million Gradium credits worth over $2,000 and full M-plan API access for six months, plus engineering support and early model access.
     lifecycle:
       status: active
@@ -49,16 +49,44 @@ offers:
         kind: none
     eligibility:
       rule:
-        criterion_id: cri_01
-        kind: manual
-        reason: vendor-discretion
-        statement: Applicant must be a startup building voice AI experiences and submit the public application for Gradium review.
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Applicant must be at the Seed or Series A funding stage.
+            value:
+              type: string-set
+              values:
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            fact: company.employee_count
+            kind: predicate
+            operator: lt
+            statement: Applicant must have fewer than 25 employees.
+            value:
+              type: number
+              value: 25
+          - criterion_id: cri_03
+            kind: manual
+            reason: external-verification
+            statement: Voice must be a core component of the applicant's product with a clear monetization strategy.
+          - criterion_id: cri_04
+            kind: manual
+            reason: external-verification
+            statement: One-off projects are not eligible.
+          - criterion_id: cri_05
+            kind: manual
+            reason: vendor-discretion
+            statement: Applications are subject to Gradium review and approval.
     roles:
       terms_authority_entity_id: ent_01kz4xawkkh7rvsmxed39e7esq
       access_operator_entity_id: ent_01kz4xawkkh7rvsmxed39e7esq
     access:
       availability: public
       method: form
-      url: https://gradium.ai/startups
+      url: https://gradium.ai/startups/apply
     source_ids:
       - src_63d31774f527f111ea998b78e24a4480749d063166b4d877a8da56390f6f189f
