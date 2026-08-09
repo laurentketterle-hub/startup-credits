@@ -1,6 +1,6 @@
 # Catalog data license
 
-Catalog facts in `data/` are licensed under the
+Catalog facts in `vendors/` are licensed under the
 [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
 Attribution: `Sourcey Startup Credits, https://github.com/sourcey/startup-credits`.

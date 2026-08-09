@@ -1,0 +1,33 @@
+name: notify-sourcey-publication
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "vendors/**/*.yaml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: notify-publication-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Dispatch the exact merged head to Sourcey
+        env:
+          GH_TOKEN: ${{ secrets.SOURCEY_WORKSPACE_DISPATCH_TOKEN }}
+          BASE_SHA: ${{ github.event.before }}
+          HEAD_SHA: ${{ github.sha }}
+          REPOSITORY_ID: ${{ github.repository_id }}
+        run: |
+          test -n "$GH_TOKEN"
+          gh api --method POST repos/sourcey/sourcey-workspace/dispatches \
+            -f event_type=startup-credits-merge \
+            -F client_payload[base_sha]="$BASE_SHA" \
+            -F client_payload[head_sha]="$HEAD_SHA" \
+            -F client_payload[repository_id]="$REPOSITORY_ID"

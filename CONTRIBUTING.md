@@ -17,7 +17,7 @@ For a new record, copy a nearby vendor file and preserve the shape:
   not need one; and
 - keep separate Offers for materially different economics, eligibility, duration, access, or
   terms. Do not split one application bundle into a card per benefit.
-- Use only a category from the exact `taxonomy.json` bundled with the pinned Candidate Verifier.
+- Use only a category from the exact `taxonomy.json` bundled with the pinned Catalog Verifier.
   The local preflight downloads that file, and both local and CI failures print the complete
   current list; a nearby legacy record is not taxonomy authority.
 - Keep the vendor `description` to 200 characters and describe the vendor itself, not its offers.
@@ -45,6 +45,24 @@ node -e 'console.log("src_"+require("node:crypto").randomBytes(32).toString("hex
 - Sign off commits using `Signed-off-by: Name <email>` to certify the
   [Developer Certificate of Origin](https://developercertificate.org/).
 
+## What evidence review checks
+
+The public `sourcey/validation` status proves the YAML shape and changed identity closure. Sourcey's separate
+admission review then checks the submitted facts against the record's public source URLs:
+
+- published economics, eligibility, lifecycle, domains, links, and access facts must be supported
+  by cited source material;
+- Sourcey-written titles, summaries, descriptions, and taxonomy labels may faithfully paraphrase
+  those cited facts and do not need to appear verbatim on the vendor page;
+- opaque Sourcey IDs and canonical encodings such as money units are not expected to appear in
+  vendor copy, but the real actor or value they encode must be supported; and
+- Sourcey-owned metadata such as capture time and internal criterion IDs is not treated as a claim
+  the vendor published.
+
+If admission cannot cover a submitted fact, its result names the uncovered field and explains what
+evidence is accepted. Correct the YAML or cite a better public source on the same pull request; do
+not rewrite a supported fact merely to make it match a source sentence word for word.
+
 Before starting a new vendor, search the
 [open pull requests](https://github.com/sourcey/startup-credits/pulls) and
 [missing-record issues](https://github.com/sourcey/startup-credits/issues?q=is%3Aissue+is%3Aopen).
@@ -66,35 +84,35 @@ git rebase --signoff origin/main
 git push --force-with-lease
 ```
 
-The repository's `validate` check validates only the changed dependency closure
-through the exact digest-pinned Sourcey Candidate Verifier and enforces the DCO.
-It starts automatically when a pull request is opened or updated. A green `validate`
-check means the submitted tree is structurally and semantically valid; contributors can
+The repository's `sourcey/validation` status validates only the changed dependency closure
+through the exact digest-pinned Sourcey Catalog Verifier and enforces the DCO.
+It starts automatically when a pull request is opened or updated. A green `sourcey/validation`
+status means the submitted tree is structurally and semantically valid; contributors can
 push corrections to the same branch and receive a fresh result without maintainer review.
 External contributors do not need direct repository write access: GitHub may create a fork as the
 source of their pull request, and subsequent pushes to that same source branch update it normally.
 Sourcey's separate required `sourcey/admission` check proves that private,
 replayable evidence and authority were admitted for the exact pull-request Git
-tree; contributors never upload that private material. Once both checks pass and
+tree; contributors never upload that private material. Once both statuses pass and
 the pull request is merged, publication and live activation are automatic.
 
 For an exact local preflight, run this from a checkout with `origin/main` fetched:
 
 ```bash
 base="$(git merge-base HEAD origin/main)"
-digest="$(<.github/sourcey-candidate-verifier.sha256)"
+digest="$(<.github/sourcey-catalog-verifier.sha256)"
 work="$(mktemp -d)"
-archive="sourcey-candidate-verifier-sha256-${digest}.tar.gz"
+archive="sourcey-catalog-verifier-sha256-${digest}.tar.gz"
 curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}/${archive}" \
+  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}" \
   --output "${work}/${archive}"
 curl --fail --silent --show-error \
-  "https://artifacts.sourcey.com/catalog/code/candidate-verifier/sha256-${digest}/${archive}.sha256" \
+  "https://artifacts.sourcey.com/catalog/code/catalog-verifier/sha256-${digest}/${archive}.sha256" \
   --output "${work}/${archive}.sha256"
 (cd "${work}" && shasum -a 256 --check "${archive}.sha256")
 mkdir "${work}/verifier"
 tar -xzf "${work}/${archive}" --strip-components=1 -C "${work}/verifier"
-node "${work}/verifier/sourcey-candidate-verifier.js" \
+node "${work}/verifier/sourcey-catalog-verify.js" \
   validate-change --repository "$PWD" --base "${base}" --head HEAD \
   --taxonomy "${work}/verifier/taxonomy.json"
 rm -rf "${work}"
