@@ -1,0 +1,33 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzngfyrk3f03vx9vksf8sb52
+slug: growthos
+slug_aliases: []
+name: GrowthOS
+domains:
+  - value: usegrowthos.com
+    role: primary
+    valid_from: 2026-08-10T11:00:00.000Z
+category: analytics
+description: Growth analytics and experimentation platform for B2B SaaS companies to optimize product-led growth.
+links:
+  site: https://www.usegrowthos.com
+sources:
+  - source_id: src_a8d0be24e2a1de09d0e515f8172ae4d946e033a78ca96f382f3c52397f0807e2
+    url: https://www.usegrowthos.com/for-startups
+programs:
+  - program_id: prg_01kzngfyrkdrw7jsk557x1r5dm
+    program_slug: growthos-for-startups
+    program_slug_aliases: []
+    title: GrowthOS for Startups
+    summary: Full GrowthOS platform access free for six months for qualifying early-stage B2B SaaS startups, no credit card required.
+    source_ids:
+      - src_a8d0be24e2a1de09d0e515f8172ae4d946e033a78ca96f382f3c52397f0807e2
+offers:
+  - offer_id: off_01kzngfyrk11gabzcgqm3j30pd
+    program_id: prg_01kzngfyrkdrw7jsk557x1r5dm
+    offer_slug: startup-free-access
+    offer_slug_aliases: []
+    title: 6 Months Free Platform Access
+    summary: Six months of full GrowthOS platform access at no cost for early-stage B2B SaaS startups, no credit card required.
+    source_ids:
+      - src_a8d0be24e2a1de09d0e515f8172ae4d946e033a78ca96f382f3c52397f0807e2
