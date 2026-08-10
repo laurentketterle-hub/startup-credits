@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzp4yjczeqs69ykvvx3e6zss
+slug: novu
+slug_aliases: []
+name: Novu
+domains:
+  - value: novu.co
+    role: primary
+    valid_from: 2026-08-10T00:00:00.000Z
+category: devtools
+description: Novu is the open-source notification infrastructure for developers, providing a unified API to manage all product notifications across channels.
+links:
+  site: https://novu.co
+sources:
+  - source_id: src_3a16f2039314321661fc3703185c9162f8cb0e7640f4b0ebd96307c1c2fb1df6
+    url: https://novu.co/startups
+programs: []
+offers:
+  - offer_id: off_01kzp4ykm87cjyhxe3mn7f1hk8
+    offer_slug: novu-for-startups
+    offer_slug_aliases: []
+    title: Novu for Startups
+    summary: Early-stage startups can receive 30% off Novu Cloud plans for 12 months, 50,000 free notifications per month, and priority support access.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-10T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 30% off Novu Cloud plans for 12 months
+          kind: other
+        - benefit_id: ben_secondary
+          description: 50,000 free notifications per month
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage startup, defined as having raised less than $5M in total funding, and must not be an existing Novu Cloud paying customer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzp4yjczeqs69ykvvx3e6zss
+      access_operator_entity_id: ent_01kzp4yjczeqs69ykvvx3e6zss
+    access:
+      availability: public
+      method: form
+      url: https://novu.co/startups
+    source_ids:
+      - src_3a16f2039314321661fc3703185c9162f8cb0e7640f4b0ebd96307c1c2fb1df6
