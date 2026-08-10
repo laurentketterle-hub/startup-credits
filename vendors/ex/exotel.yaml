@@ -1,0 +1,33 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzngfwc6g5w2xaxg23snm87f
+slug: exotel
+slug_aliases: []
+name: Exotel
+domains:
+  - value: exotel.com
+    role: primary
+    valid_from: 2026-08-10T11:00:00.000Z
+category: cloud-communications
+description: Cloud communication platform providing call center, IVR, and messaging solutions for businesses.
+links:
+  site: https://exotel.com
+sources:
+  - source_id: src_5e69f8891a2befb2eb8aad79aab153bc9613f374456ff0c1013c546c05598781
+    url: https://exotel.com/exotel-for-startups/
+programs:
+  - program_id: prg_01kzngfwc6f4m25qn9w4sh56n6
+    program_slug: exotel-for-startups
+    program_slug_aliases: []
+    title: Exotel for Startups
+    summary: Free startup plan with INR 6,000 in SMS and calls for six months, one virtual landline, and two user licenses at zero cost.
+    source_ids:
+      - src_5e69f8891a2befb2eb8aad79aab153bc9613f374456ff0c1013c546c05598781
+offers:
+  - offer_id: off_01kzngfwc64rcqt2wnn655frzr
+    program_id: prg_01kzngfwc6f4m25qn9w4sh56n6
+    offer_slug: startup-credits
+    offer_slug_aliases: []
+    title: INR 6,000 in Free Credits
+    summary: INR 6,000 worth of SMS and calls free for six months, with one virtual landline number and two user licenses at no cost.
+    source_ids:
+      - src_5e69f8891a2befb2eb8aad79aab153bc9613f374456ff0c1013c546c05598781
