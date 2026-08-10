@@ -1,0 +1,33 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzngg11g3ws6p8xy3smvw9hf
+slug: mnemoverse
+slug_aliases: []
+name: Mnemoverse
+domains:
+  - value: mnemoverse.com
+    role: primary
+    valid_from: 2026-08-10T11:00:00.000Z
+category: ai-ml
+description: Persistent memory platform for AI agents, providing long-term context retention for agentic applications.
+links:
+  site: https://mnemoverse.com
+sources:
+  - source_id: src_03bad1424416d72938a8423b6b07f560cb6bb785668edb5abcb4c015ebdf1529
+    url: https://mnemoverse.com/startups
+programs:
+  - program_id: prg_01kzngg11g1wfzew1r1c5hnf7m
+    program_slug: mnemoverse-startup-program
+    program_slug_aliases: []
+    title: Mnemoverse Startup Program
+    summary: One free month of Team plan immediately, extended to six months total for approved startups, valued at $894.
+    source_ids:
+      - src_03bad1424416d72938a8423b6b07f560cb6bb785668edb5abcb4c015ebdf1529
+offers:
+  - offer_id: off_01kzngg11gpx10cd1s3qn8jgjq
+    program_id: prg_01kzngg11g1wfzew1r1c5hnf7m
+    offer_slug: startup-team-plan
+    offer_slug_aliases: []
+    title: Up to 6 Months Free Team Plan
+    summary: One month of Team plan free immediately, extended to six months for approved pre-seed/seed-stage AI-agent startups. Valued at $894.
+    source_ids:
+      - src_03bad1424416d72938a8423b6b07f560cb6bb785668edb5abcb4c015ebdf1529
