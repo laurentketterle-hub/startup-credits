@@ -1,0 +1,33 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzngg3j7b1g5derhtap83kbw
+slug: qovery
+slug_aliases: []
+name: Qovery
+domains:
+  - value: qovery.com
+    role: primary
+    valid_from: 2026-08-10T11:00:00.000Z
+category: infrastructure
+description: Platform-as-a-Service for deploying, managing, and scaling applications on cloud infrastructure.
+links:
+  site: https://www.qovery.com
+sources:
+  - source_id: src_ba983b00d93820a162cd95c15cefeeff22b56dabedf6fd8c076cea63d7546780
+    url: https://www.qovery.com/startups
+programs:
+  - program_id: prg_01kzngg3j7phzgfrr094jea9k0
+    program_slug: qovery-perks-program
+    program_slug_aliases: []
+    title: Qovery Perks Program for Startups
+    summary: Six months of Team plan free, 30% off first annual subscription thereafter, plus dedicated onboarding support.
+    source_ids:
+      - src_ba983b00d93820a162cd95c15cefeeff22b56dabedf6fd8c076cea63d7546780
+offers:
+  - offer_id: off_01kzngg3j7w07aszp50r27af8x
+    program_id: prg_01kzngg3j7phzgfrr094jea9k0
+    offer_slug: startup-team-plan
+    offer_slug_aliases: []
+    title: 6 Months Free Team Plan + 30% Off
+    summary: Six months of Team plan at no charge, followed by 30% off the first annual subscription, plus one-to-one onboarding.
+    source_ids:
+      - src_ba983b00d93820a162cd95c15cefeeff22b56dabedf6fd8c076cea63d7546780
