@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_bfbe08ea0c8698591129767035
+slug: rails-cloud
+slug_aliases: []
+name: Rails Cloud
+domains:
+  - value: railscloud.co
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: cloud-hosting
+description: Rails Cloud provides cloud infrastructure including VPS, databases, container registry, and object storage, with a focus on serving African markets.
+links:
+  site: https://railscloud.co
+sources:
+  - source_id: src_cbf01c02dec87007311e7e58b94e9ac16aad7eb6e158c1056cb4a97da4764637
+    url: https://pages.railscloud.co/startup
+programs:
+  - program_id: prg_bfbe08ea0c8698591129767035
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Rails Cloud Startup Program
+    summary: Rails Cloud offers a three-tier Startup Program with stage-based cloud credits for pre-product to growth-stage startups serving African markets.
+    source_ids:
+      - src_cbf01c02dec87007311e7e58b94e9ac16aad7eb6e158c1056cb4a97da4764637
+offers:
+  - offer_id: off_bfbe08ea0c8698591129767035
+    program_id: prg_bfbe08ea0c8698591129767035
+    offer_slug: 1000-seed-tier-cloud-credits
+    offer_slug_aliases: []
+    title: $1,000 in Seed tier cloud credits
+    summary: Pre-product startups with a clear idea and founding team receive $1,000 in cloud credits valid for 12 months, usable across VPS, databases, container registry, object storage, and other Rails Cloud services.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in cloud credits for Rails Cloud services (VPS, databases, container registry, object storage).
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.age_months
+            kind: predicate
+            operator: lt
+            statement: Company must be less than 5 years old.
+            value:
+              type: number
+              value: 60
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must be building a technology product serving African markets.
+          - criterion_id: cri_03
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must have a clear idea and founding team (Seed tier).
+          - criterion_id: cri_04
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Company must be new to Rails Cloud with no other active cloud credits.
+    roles:
+      terms_authority_entity_id: ent_bfbe08ea0c8698591129767035
+      access_operator_entity_id: ent_bfbe08ea0c8698591129767035
+    access:
+      availability: public
+      method: form
+      url: https://pages.railscloud.co/startup
+    source_ids:
+      - src_cbf01c02dec87007311e7e58b94e9ac16aad7eb6e7e158c1056cb4a97da4764637
