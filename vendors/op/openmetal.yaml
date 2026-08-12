@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqrzfdqemde0gf72t4ryb
+slug: openmetal
+slug_aliases: []
+name: OpenMetal
+domains:
+  - value: openmetal.io
+    role: primary
+    valid_from: 2026-08-12T19:56:08.000Z
+category: hosting-infra
+description: OpenMetal provides dedicated private cloud infrastructure on OpenStack for startups and enterprises.
+links:
+  site: https://openmetal.io
+sources:
+  - source_id: src_3b188c95520f90f97b0ce835ca9f13f938e4d85a16965669e9dfb30d4a93b163
+    url: https://openmetal.io/programs/startup-excelerator-program-cloud-credits/
+programs: []
+offers:
+  - offer_id: off_01kzvrqrzf1s62nakkpj29gbb1
+    offer_slug: openmetal-startup-excelerator-program
+    offer_slug_aliases: []
+    title: OpenMetal Startup eXcelerator Program
+    summary: Startups using dedicated private cloud infrastructure may receive up to $100,000 in credits applied to their OpenMetal cloud account.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:56:08.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $100,000 in private cloud credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups accepted into the Startup eXcelerator Program using dedicated private cloud infrastructure.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqrzfdqemde0gf72t4ryb
+      access_operator_entity_id: ent_01kzvrqrzfdqemde0gf72t4ryb
+    access:
+      availability: public
+      method: form
+      url: https://openmetal.io/programs/startup-excelerator-program-cloud-credits/
+    source_ids:
+      - src_3b188c95520f90f97b0ce835ca9f13f938e4d85a16965669e9dfb30d4a93b163
