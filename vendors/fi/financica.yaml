@@ -1,0 +1,70 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_638f7920c6144668d242f63fd5
+slug: financica
+slug_aliases: []
+name: Financica
+domains:
+  - value: financica.app
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: accounting-finance
+description: Financica is AI-powered accounting software where founders and accountants work together, featuring live ledger queries, automated categorization, and real-time financial reports.
+links:
+  site: https://financica.app
+sources:
+  - source_id: src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
+    url: https://financica.app/for/startups
+programs:
+  - program_id: prg_638f7920c6144668d242f63fd5
+    program_slug: startup-program
+    program_slug_aliases: []
+    title: Financica Startup Program
+    summary: Financica offers qualifying early-stage startups 80% off the Scale plan for 12 months.
+    source_ids:
+      - src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
+offers:
+  - offer_id: off_638f7920c6144668d242f63fd5
+    program_id: prg_638f7920c6144668d242f63fd5
+    offer_slug: 80-percent-off-scale-plan
+    offer_slug_aliases: []
+    title: 80% off the Scale plan for 12 months
+    summary: Qualifying early-stage startups receive 80% off the Financica Scale plan for 12 months, including AI-powered bookkeeping, live ledger queries, and real-time financial reporting.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: 80% discount on the Financica Scale plan for 12 months.
+          duration:
+            kind: exact
+            value: P12M
+          kind: discount
+          value:
+            amount:
+              currency: USD
+              minor_units: 0
+            kind: variable
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be an early-stage startup.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must apply through the Financica Startup Program page and be approved.
+    roles:
+      terms_authority_entity_id: ent_638f7920c6144668d242f63fd5
+      access_operator_entity_id: ent_638f7920c6144668d242f63fd5
+    access:
+      availability: public
+      method: form
+      url: https://financica.app/for/startups
+    source_ids:
+      - src_1dc3065a5e0f9fb4b13cedbb4f9ef62ac9da122a5eaa08d22530c205b534670f
