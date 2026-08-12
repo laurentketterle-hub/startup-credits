@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrygbq69epyewy2fvdqvr7
+slug: cadenio
+slug_aliases: []
+name: Cadenio
+domains:
+  - value: cadenio.com
+    role: primary
+    valid_from: 2026-08-12T19:59:48.000Z
+category: productivity
+description: Cadenio provides a productivity software platform for startups and businesses.
+links:
+  site: https://cadenio.com
+sources:
+  - source_id: src_c1e8fb1d4b93511d0b375a715ba487f26bd4ff0acf2ad128e0eebdd3d9ce829b
+    url: https://www.cadenio.com/en/startup-program
+programs: []
+offers:
+  - offer_id: off_01kzvrygbr7j7aj5epm0df4gv6
+    offer_slug: cadenio-startup-program
+    offer_slug_aliases: []
+    title: Cadenio Startup Program
+    summary: Early-stage startups receive 50% off for 12 months; applications are individually reviewed with a stated two-business-day response time.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:59:48.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off for 12 months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups; applications are individually reviewed.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrygbq69epyewy2fvdqvr7
+      access_operator_entity_id: ent_01kzvrygbq69epyewy2fvdqvr7
+    access:
+      availability: public
+      method: form
+      url: https://www.cadenio.com/en/startup-program
+    source_ids:
+      - src_c1e8fb1d4b93511d0b375a715ba487f26bd4ff0acf2ad128e0eebdd3d9ce829b
