@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzw5gdqfgzkkwztat9p5c4y3
+slug: omc-cloud
+slug_aliases: []
+name: OMC Cloud
+domains:
+  - value: omc.cloud
+    role: primary
+    valid_from: 2026-08-12T23:39:18.000Z
+category: hosting-infra
+description: OMC Cloud provides cloud infrastructure and managed services to help startups build and scale applications.
+links:
+  site: https://omc.cloud
+sources:
+  - source_id: src_e13b14f9c10580cc5db368b9df6351eaef636ae36d2cf32d680d55413b16ef3e
+    url: https://omc.cloud/products/startups
+programs:
+  - program_id: prg_01kzw5gdqfpg1yrjv2vjsr8bn1
+    program_slug: omc-cloud-startup-program
+    program_slug_aliases: []
+    title: OMC Cloud Startup Program
+    summary: Startup program offering cloud credits and technical guidance to eligible early-stage startups.
+    source_ids:
+      - src_e13b14f9c10580cc5db368b9df6351eaef636ae36d2cf32d680d55413b16ef3e
+offers:
+  - offer_id: off_01kzw5gdqfhet5498hcrqzm79x
+    program_id: prg_01kzw5gdqfpg1yrjv2vjsr8bn1
+    offer_slug: startup-cloud-credits
+    offer_slug_aliases: []
+    title: OMC Cloud Startup Credits
+    summary: Eligible early-stage technology startups up to Series A can apply for up to $10,000 in OMC cloud credits, with technical guidance and no long-term commitment.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T23:39:18.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Eligible early-stage technology startups up to Series A can apply for up to $10,000 in OMC cloud credits, with technical guidance and no long-term commitment.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 1000000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage technology startups up to Series A.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzw5gdqfgzkkwztat9p5c4y3
+      access_operator_entity_id: ent_01kzw5gdqfgzkkwztat9p5c4y3
+    access:
+      availability: public
+      method: form
+      url: https://omc.cloud/products/startups
+    source_ids:
+      - src_e13b14f9c10580cc5db368b9df6351eaef636ae36d2cf32d680d55413b16ef3e
