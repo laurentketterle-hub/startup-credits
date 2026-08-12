@@ -1,0 +1,14 @@
+vendor_id: railscloud
+name: Rails Cloud
+website: https://railscloud.co
+description: Managed Rails hosting platform with zero-config deployments
+category: Cloud & Hosting
+pricing: subscription
+startup_program:
+  name: Rails Cloud Startup Program
+  description: Seed credit offer for early-stage startups deploying Rails applications
+  url: https://pages.railscloud.co/startup
+  discount: Seed credits available
+  duration: 12 months
+  eligibility: Seed-stage startups
+  region: Global
