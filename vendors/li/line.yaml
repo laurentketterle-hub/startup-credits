@@ -1,0 +1,82 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_422d1034405804c159bc4875a1
+slug: line
+slug_aliases: []
+name: LINE
+domains:
+  - value: line.me
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: marketing
+description: LINE is a leading messaging and digital platform in Asia, offering official accounts, advertising, and API services for businesses and startups.
+links:
+  site: https://line.me
+sources:
+  - source_id: src_9455e7138c8bde6d511b859b0532a1cbc59fbd3c0e5569465b02c94cf85473b2
+    url: https://linescaleup.landpress.line.me/home/
+programs:
+  - program_id: prg_422d1034405804c159bc4875a1
+    program_slug: line-scale-up
+    program_slug_aliases: []
+    title: LINE SCALE UP
+    summary: LINE SCALE UP offers selected Seed to Series A startups a one-year package valued at up to THB 4 million (approximately USD 120,000), including LINE Official Account and LINE Ads credits, expert support, and potential strategic collaboration.
+    source_ids:
+      - src_9455e7138c8bde6d511b859b0532a1cbc59fbd3c0e5569465b02c94cf85473b2
+offers:
+  - offer_id: off_422d1034405804c159bc4875a1
+    program_id: prg_422d1034405804c159bc4875a1
+    offer_slug: up-to-thb-4-million-package
+    offer_slug_aliases: []
+    title: Up to THB 4 million startup package
+    summary: Selected Seed to Series A startups receive a one-year package valued at up to THB 4 million (approx. USD 120,000), including LINE Official Account and LINE Ads credits, expert support, mentorship, and potential strategic collaboration with LINE.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: LINE Official Account and LINE Ads credits valued at up to THB 4 million.
+          duration:
+            kind: exact
+            value: P12M
+          kind: credit
+          value:
+            amount:
+              currency: THB
+              minor_units: 400000000
+            kind: up-to
+        - benefit_id: ben_02
+          description: Expert support and mentorship from LINE team.
+          kind: other
+        - benefit_id: ben_03
+          description: Potential strategic collaboration opportunities.
+          kind: other
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            fact: company.stage
+            kind: predicate
+            operator: in
+            statement: Startup must be at Seed to Series A stage.
+            value:
+              type: string-set
+              values:
+                - seed
+                - series-a
+          - criterion_id: cri_02
+            kind: manual
+            reason: external-verification
+            statement: Applicant must apply and be selected through the LINE SCALE UP application process.
+    roles:
+      terms_authority_entity_id: ent_422d1034405804c159bc4875a1
+      access_operator_entity_id: ent_422d1034405804c159bc4875a1
+    access:
+      availability: public
+      method: form
+      url: https://linescaleup.landpress.line.me/home/
+    source_ids:
+      - src_9455e7138c8bde6d511b859b0532a1cbc59fbd3c0e5569465b02c94cf85473b2
