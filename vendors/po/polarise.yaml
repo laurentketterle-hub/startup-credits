@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzw5gh07qrwtnpvf163s64ry
+slug: polarise
+slug_aliases: []
+name: Polarise
+domains:
+  - value: polarise.eu
+    role: primary
+    valid_from: 2026-08-12T23:39:21.000Z
+category: hosting-infra
+description: Polarise offers European AI cloud infrastructure with GPU compute for AI-native startups and B2B builders.
+links:
+  site: https://polarise.eu
+sources:
+  - source_id: src_ab0e60c3ea9def791bf1de12cabe35e1ec2bb598fefda5747698a4f341426552
+    url: https://polarise.eu/startup-program/
+programs:
+  - program_id: prg_01kzw5gh071a31jtdfftjt9arn
+    program_slug: build-on-polarise
+    program_slug_aliases: []
+    title: Build on Polarise Startup Program
+    summary: Startup program offering free GPU hours and AI Cloud credits plus priority engineering support.
+    source_ids:
+      - src_ab0e60c3ea9def791bf1de12cabe35e1ec2bb598fefda5747698a4f341426552
+offers:
+  - offer_id: off_01kzw5gh078bw6zd6da35qzagt
+    program_id: prg_01kzw5gh071a31jtdfftjt9arn
+    offer_slug: startup-ai-cloud-credits
+    offer_slug_aliases: []
+    title: Polarise AI Cloud Credits
+    summary: The Build on Polarise Startup Program offers eligible European B2B and AI-native startups staged free GPU hours and AI Cloud credits up to EUR 25,000, plus priority engineering support and startup resources.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T23:39:21.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: The Build on Polarise Startup Program offers eligible European B2B and AI-native startups staged free GPU hours and AI Cloud credits up to EUR 25,000, plus priority engineering support and startup resources.
+          kind: credit
+          value:
+            amount:
+              currency: EUR
+              minor_units: 2500000
+            kind: up-to
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: European B2B and AI-native startups.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzw5gh07qrwtnpvf163s64ry
+      access_operator_entity_id: ent_01kzw5gh07qrwtnpvf163s64ry
+    access:
+      availability: public
+      method: form
+      url: https://polarise.eu/startup-program/
+    source_ids:
+      - src_ab0e60c3ea9def791bf1de12cabe35e1ec2bb598fefda5747698a4f341426552
