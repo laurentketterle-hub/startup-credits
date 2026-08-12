@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvry6hhes6hd2spjbq13e3t
+slug: viduli
+slug_aliases: []
+name: Viduli
+domains:
+  - value: viduli.io
+    role: primary
+    valid_from: 2026-08-12T19:59:38.000Z
+category: hosting-infra
+description: Viduli provides a video hosting and streaming service platform.
+links:
+  site: https://viduli.io
+sources:
+  - source_id: src_b76252776bf34e29f63ffbfed0f3df22bccd7627d3c81e254fa50bcd9f146c93
+    url: https://viduli.io/offers/startup-300-credit
+programs: []
+offers:
+  - offer_id: off_01kzvry6hhv56jhdh9sw9w8pzx
+    offer_slug: viduli-startup-credit
+    offer_slug_aliases: []
+    title: Viduli Startup Credit
+    summary: Eligible early-stage startups receive $300 in perpetual Viduli service credits; the offer is global and limited to first-time Viduli users.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:59:38.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $300 in perpetual Viduli service credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups with a business email and public company website; limited to first-time Viduli users.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvry6hhes6hd2spjbq13e3t
+      access_operator_entity_id: ent_01kzvry6hhes6hd2spjbq13e3t
+    access:
+      availability: public
+      method: form
+      url: https://viduli.io/offers/startup-300-credit
+    source_ids:
+      - src_b76252776bf34e29f63ffbfed0f3df22bccd7627d3c81e254fa50bcd9f146c93
