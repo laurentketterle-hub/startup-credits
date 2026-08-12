@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqjje5j5a7442x5nzmhxg
+slug: flexai
+slug_aliases: []
+name: FlexAI
+domains:
+  - value: flex.ai
+    role: primary
+    valid_from: 2026-08-12T19:56:01.000Z
+category: ai-ml
+description: FlexAI provides AI infrastructure and Token Factory credits for training and inference workloads.
+links:
+  site: https://flex.ai
+sources:
+  - source_id: src_0c59573fc39d904b2b0244e2b4891b39b5cd167951268c54a0b62ef498534355
+    url: https://www.flex.ai/startups
+programs: []
+offers:
+  - offer_id: off_01kzvrqjje6k0mr201c4rygx4v
+    offer_slug: flexai-startup-program
+    offer_slug_aliases: []
+    title: FlexAI Startup Program
+    summary: Approved AI-native startups receive $1,000 in Token Factory credits, 50% off the first three months, and 30% off the next three months.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:56:01.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: $1,000 in Token Factory credits plus discounts on AI infrastructure
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: AI-native startups approved through the program application.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqjje5j5a7442x5nzmhxg
+      access_operator_entity_id: ent_01kzvrqjje5j5a7442x5nzmhxg
+    access:
+      availability: public
+      method: form
+      url: https://www.flex.ai/startups
+    source_ids:
+      - src_0c59573fc39d904b2b0244e2b4891b39b5cd167951268c54a0b62ef498534355
