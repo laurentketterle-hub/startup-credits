@@ -1,0 +1,14 @@
+vendor_id: linescaleup
+name: LINE SCALE UP
+website: https://linescaleup.landpress.line.me
+description: LINE's startup acceleration and support program
+category: Accelerator & Venture
+pricing: free
+startup_program:
+  name: LINE SCALE UP
+  description: Startup program by LINE providing resources, mentorship and platform access
+  url: https://linescaleup.landpress.line.me/home/
+  discount: Platform credits and mentorship
+  duration: Varies
+  eligibility: Qualified startups
+  region: Asia-Pacific
