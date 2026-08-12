@@ -1,0 +1,61 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzw5gpsvsvmfsw0x9sb3m3x1
+slug: formaloo
+slug_aliases: []
+name: Formaloo
+domains:
+  - value: formaloo.com
+    role: primary
+    valid_from: 2026-08-12T23:39:27.000Z
+category: no-code
+description: Formaloo is a no-code platform for building forms, surveys, apps, and customer portals.
+links:
+  site: https://formaloo.com
+sources:
+  - source_id: src_bfa7c6ab74cfea4dd6de7e22d8f338ec815c9a4ea3d6b4bbed53055def31aa21
+    url: https://www.formaloo.com/startups
+programs:
+  - program_id: prg_01kzw5gpsvaw4c72hvv7a8g088
+    program_slug: formaloo-startup-program
+    program_slug_aliases: []
+    title: Formaloo Startup Program
+    summary: Startup program offering product credit to eligible startups.
+    source_ids:
+      - src_bfa7c6ab74cfea4dd6de7e22d8f338ec815c9a4ea3d6b4bbed53055def31aa21
+offers:
+  - offer_id: off_01kzw5gpsw80gxmdxxj855b0eb
+    program_id: prg_01kzw5gpsvaw4c72hvv7a8g088
+    offer_slug: startup-product-credit
+    offer_slug_aliases: []
+    title: Formaloo Startup Credit
+    summary: Formaloo's Startup Program offers USD 1,000 in product credit to eligible startups, subject to funding, company age, ownership, employee-count, and new-Free-plan-user requirements.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T23:39:27.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Formaloo's Startup Program offers USD 1,000 in product credit to eligible startups, subject to funding, company age, ownership, employee-count, and new-Free-plan-user requirements.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups meeting funding, company age, ownership, employee-count, and new-Free-plan-user requirements.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzw5gpsvsvmfsw0x9sb3m3x1
+      access_operator_entity_id: ent_01kzw5gpsvsvmfsw0x9sb3m3x1
+    access:
+      availability: public
+      method: form
+      url: https://www.formaloo.com/startups
+    source_ids:
+      - src_bfa7c6ab74cfea4dd6de7e22d8f338ec815c9a4ea3d6b4bbed53055def31aa21
