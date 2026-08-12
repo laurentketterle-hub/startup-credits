@@ -1,0 +1,67 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_509d0a7c6dba0b3fa868c6db41
+slug: exa
+slug_aliases: []
+name: Exa
+domains:
+  - value: exa.ai
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: ai-ml
+description: Exa provides an AI search API built for AI agents and RAG, combining neural embedding-first search with keyword fallback for developers.
+links:
+  site: https://exa.ai
+sources:
+  - source_id: src_54d4ea6f7a53cee8209844f97c411b53a7f97ee7161669897acf797e5e25fff1
+    url: https://exa.ai/pricing
+programs:
+  - program_id: prg_509d0a7c6dba0b3fa868c6db41
+    program_slug: startup-and-education-grants
+    program_slug_aliases: []
+    title: Startup and Education Grants
+    summary: Exa provides $1,000 in free API credits for startups and education projects to build, launch, and test web search applications.
+    source_ids:
+      - src_54d4ea6f7a53cee8209844f97c411b53a7f97ee7161669897acf797e5e25fff1
+offers:
+  - offer_id: off_509d0a7c6dba0b3fa868c6db41
+    program_id: prg_509d0a7c6dba0b3fa868c6db41
+    offer_slug: 1000-in-api-credits
+    offer_slug_aliases: []
+    title: $1,000 in API credits
+    summary: Eligible startups and education projects receive $1,000 in free Exa API credits to build, launch, and test web search functionality.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_01
+          description: $1,000 in Exa API credits for web search functionality.
+          kind: credit
+          value:
+            amount:
+              currency: USD
+              minor_units: 100000
+            kind: exact
+    eligibility:
+      rule:
+        kind: all
+        rules:
+          - criterion_id: cri_01
+            kind: manual
+            reason: external-verification
+            statement: Applicant must be a startup or education project.
+          - criterion_id: cri_02
+            kind: manual
+            reason: not-machine-evaluable
+            statement: Applicant must apply and be approved by Exa.
+    roles:
+      terms_authority_entity_id: ent_509d0a7c6dba0b3fa868c6db41
+      access_operator_entity_id: ent_509d0a7c6dba0b3fa868c6db41
+    access:
+      availability: public
+      method: other
+      url: https://exa.ai/pricing
+    source_ids:
+      - src_54d4ea6f7a53cee8209844f97c411b53a7f97ee7161669897acf797e5e25fff1
