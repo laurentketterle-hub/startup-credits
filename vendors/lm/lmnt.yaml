@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqpp6wkjcrsj2addgpjen
+slug: lmnt
+slug_aliases: []
+name: LMNT
+domains:
+  - value: lmnt.com
+    role: primary
+    valid_from: 2026-08-12T19:56:05.000Z
+category: ai-ml
+description: LMNT provides voice AI APIs for speech synthesis and conversational voice applications.
+links:
+  site: https://lmnt.com
+sources:
+  - source_id: src_4bb376175514d4e2bf9c722c7736154d625d2796bab8df782369c9fa2f1147df
+    url: https://www.lmnt.com/startups
+programs: []
+offers:
+  - offer_id: off_01kzvrqpp6cj68gk35fnv4gnnm
+    offer_slug: lmnt-startup-grant
+    offer_slug_aliases: []
+    title: LMNT Startup Grant
+    summary: Eligible voice AI startups receive 45 million voice credits over three months (15 million characters per month, approximately 330 hours of speech monthly).
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:56:05.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 45 million voice credits over three months
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Voice AI startups accepted into the LMNT Startup Grant program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqpp6wkjcrsj2addgpjen
+      access_operator_entity_id: ent_01kzvrqpp6wkjcrsj2addgpjen
+    access:
+      availability: public
+      method: form
+      url: https://www.lmnt.com/startups
+    source_ids:
+      - src_4bb376175514d4e2bf9c722c7736154d625d2796bab8df782369c9fa2f1147df
