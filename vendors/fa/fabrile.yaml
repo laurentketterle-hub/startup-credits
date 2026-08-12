@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvryb5nehccxapvtq5f6tf4
+slug: fabrile
+slug_aliases: []
+name: Fabrile
+domains:
+  - value: fabrile.app
+    role: primary
+    valid_from: 2026-08-12T19:59:43.000Z
+category: ai-ml
+description: Fabrile provides an AI agent platform for startups with usage-based plans.
+links:
+  site: https://fabrile.app
+sources:
+  - source_id: src_6fde986403e01a0e6866b85efd1c5e6ff538639575d0563c15e13dbc022bb359
+    url: https://fabrile.app/use-cases/startups
+programs: []
+offers:
+  - offer_id: off_01kzvryb5njkhkz7j8qn1mk5rr
+    offer_slug: fabrile-startup-program
+    offer_slug_aliases: []
+    title: Fabrile Startup Program
+    summary: Eligible early-stage startups receive the full Growth plan free for three months, a EUR 950 value, with five AI agents and 5,000 messages monthly.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:59:43.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Full Growth plan free for three months (EUR 950 value)
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Eligible early-stage startups accepted into the program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvryb5nehccxapvtq5f6tf4
+      access_operator_entity_id: ent_01kzvryb5nehccxapvtq5f6tf4
+    access:
+      availability: public
+      method: form
+      url: https://fabrile.app/use-cases/startups
+    source_ids:
+      - src_6fde986403e01a0e6866b85efd1c5e6ff538639575d0563c15e13dbc022bb359
