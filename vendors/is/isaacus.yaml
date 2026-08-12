@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2b8c9d0e1f2g3h4i5j6k7l
+slug: isaacus
+slug_aliases: []
+name: Isaacus
+domains:
+  - value: isaacus.com
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: ai
+description: Isaacus provides state-of-the-art legal AI models and APIs for developers and startups building legal tech solutions, offering powerful tools for legal document analysis, contract review, and compliance automation.
+links:
+  site: https://isaacus.com
+sources:
+  - source_id: src_01kz2b8c9d0e1f2g3h4i5j6k7l
+    url: https://isaacus.com/startups
+programs: []
+offers:
+  - offer_id: off_01kz2b8c9d0e1f2g3h4i5j6k7l
+    offer_slug: isaacus-startup-program
+    offer_slug_aliases: []
+    title: Isaacus Startup Program
+    summary: Startups can receive up to $5,000 in free API credits for their first four months of usage of Isaacus legal AI models, followed by a 50% discount on model usage for the first twelve months. New users also receive $100 in free credits upon adding a payment method.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to $5,000 in free API credits for first 4 months
+          kind: credit
+          amount:
+            currency: USD
+            value: 5000
+        - benefit_id: ben_02
+          description: 50% discount on model usage for first 12 months
+          kind: discount
+          percentage:
+            basis_points: 5000
+            kind: exact
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup applying to the Isaacus Startup Program. New users also receive $100 in free credits upon adding a payment method.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz2b8c9d0e1f2g3h4i5j6k7l
+      access_operator_entity_id: ent_01kz2b8c9d0e1f2g3h4i5j6k7l
+    access:
+      availability: public
+      method: form
+      url: https://isaacus.com/startups
+    source_ids:
+      - src_01kz2b8c9d0e1f2g3h4i5j6k7l

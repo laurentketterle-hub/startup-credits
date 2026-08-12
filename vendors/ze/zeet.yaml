@@ -1,0 +1,50 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2a7b8c9d0e1f2g3h4i5j6k
+slug: zeet
+slug_aliases: []
+name: Zeet
+domains:
+  - value: zeet.co
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: hosting-infra
+description: Zeet is a Deployment Platform for Kubernetes that layers over your Cloud Account, making it easy for every team member to deploy and manage applications and infrastructure across multiple cloud providers using Kubernetes, Serverless, Terraform, Docker, and Helm.
+links:
+  site: https://zeet.co
+sources:
+  - source_id: src_01kz2a7b8c9d0e1f2g3h4i5j6k
+    url: https://zeet.co/resources/startups-program
+programs: []
+offers:
+  - offer_id: off_01kz2a7b8c9d0e1f2g3h4i5j6k
+    offer_slug: zeet-startup-program
+    offer_slug_aliases: []
+    title: Zeet Startup Program
+    summary: Eligible startups affiliated with a VC or Cloud partner network who have raised less than $1M can receive 7 months of Zeet for free, plus access to a lifetime free tier with 3 projects.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 7 months free
+          kind: free-service
+          service: 7 months free
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a startup affiliated with a VC or Cloud partner network, have raised less than $1M in funding.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz2a7b8c9d0e1f2g3h4i5j6k
+      access_operator_entity_id: ent_01kz2a7b8c9d0e1f2g3h4i5j6k
+    access:
+      availability: public
+      method: form
+      url: https://zeet.co/resources/startups-program
+    source_ids:
+      - src_01kz2a7b8c9d0e1f2g3h4i5j6k

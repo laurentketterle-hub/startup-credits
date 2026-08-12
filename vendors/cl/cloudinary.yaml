@@ -1,0 +1,52 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2c9d0e1f2g3h4i5j6k7l8m
+slug: cloudinary
+slug_aliases: []
+name: Cloudinary
+domains:
+  - value: cloudinary.com
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: media
+description: Cloudinary provides cloud-based image and video management, optimization, and delivery for web and mobile applications, enabling startups to automate media workflows and deliver high-quality visual experiences at scale.
+links:
+  site: https://cloudinary.com
+sources:
+  - source_id: src_01kz2c9d0e1f2g3h4i5j6k7l8m
+    url: https://cloudinary.com/solutions/cloudinary-for-startups
+programs: []
+offers:
+  - offer_id: off_01kz2c9d0e1f2g3h4i5j6k7l8m
+    offer_slug: cloudinary-for-startups
+    offer_slug_aliases: []
+    title: Cloudinary for Startups
+    summary: Cloudinary offers startup-friendly plans and exclusive credits to help early-stage companies scale their media management affordably. The free plan includes 25 credits per month (1 credit = 1,000 transformations, 1 GB storage, or 1 GB bandwidth). Additional startup credits and discounts are available through the Cloudinary for Startups program.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: 25 free credits per month (free plan)
+          kind: free-service
+          service: 25 credits/month free plan
+        - benefit_id: ben_02
+          description: Exclusive startup credits and discounts
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be an early-stage company applying to the Cloudinary for Startups program.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz2c9d0e1f2g3h4i5j6k7l8m
+      access_operator_entity_id: ent_01kz2c9d0e1f2g3h4i5j6k7l8m
+    access:
+      availability: public
+      method: form
+      url: https://cloudinary.com/solutions/cloudinary-for-startups
+    source_ids:
+      - src_01kz2c9d0e1f2g3h4i5j6k7l8m

@@ -1,0 +1,60 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kz2d0e1f2g3h4i5j6k7l8m9n
+slug: deutsche-telekom
+slug_aliases: []
+name: Deutsche Telekom
+domains:
+  - value: telekom.com
+    role: primary
+    valid_from: 2026-08-12T00:00:00.000Z
+category: hosting-infra
+description: Deutsche Telekom's TechBoost startup program accelerates selected technology startups with cloud-based business models by providing infrastructure credits, sales and marketing support, and access to Telekom's customer network.
+links:
+  site: https://www.telekom.com
+sources:
+  - source_id: src_01kz2d0e1f2g3h4i5j6k7l8m9n
+    url: https://techboost.telekom.com/
+programs: []
+offers:
+  - offer_id: off_01kz2d0e1f2g3h4i5j6k7l8m9n
+    offer_slug: deutsche-telekom-techboost
+    offer_slug_aliases:
+      - telekom-techboost
+      - techboost
+    title: Telekom TechBoost
+    summary: Selected tech startups with cloud-based business models based in Germany can receive up to €100,000 in credits for the Open Telekom Cloud, along with valuable sales and marketing support, and discounts on fixed-line, mobile, and broadband tariffs. The most promising participants have the chance to benefit from Telekom's existing customer network.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T00:00:00.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to €100,000 in Open Telekom Cloud credits
+          kind: credit
+          amount:
+            currency: EUR
+            value: 100000
+        - benefit_id: ben_02
+          description: Sales and marketing support
+          kind: other
+        - benefit_id: ben_03
+          description: Discounts on fixed-line, mobile, and broadband tariffs
+          kind: discount
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Must be a tech startup with a cloud-based business model and based in Germany.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kz2d0e1f2g3h4i5j6k7l8m9n
+      access_operator_entity_id: ent_01kz2d0e1f2g3h4i5j6k7l8m9n
+    access:
+      availability: public
+      method: form
+      url: https://techboost.telekom.com/
+    source_ids:
+      - src_01kz2d0e1f2g3h4i5j6k7l8m9n
