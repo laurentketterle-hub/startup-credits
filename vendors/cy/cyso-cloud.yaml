@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqdbs0g1n4gfjtt6fyfa7
+slug: cyso-cloud
+slug_aliases: []
+name: Cyso Cloud
+domains:
+  - value: cyso.cloud
+    role: primary
+    valid_from: 2026-08-12T19:55:56.000Z
+category: hosting-infra
+description: Cyso Cloud provides managed OpenStack and Kubernetes cloud infrastructure for startups and enterprises.
+links:
+  site: https://cyso.cloud
+sources:
+  - source_id: src_d56f4fa37151c138b81903494bbcc34b6e1d5f8d06d4332a98a2e62184cc44d3
+    url: https://cyso.cloud/startup-program
+programs: []
+offers:
+  - offer_id: off_01kzvrqdbt6t15b8ap5w3c5vnw
+    offer_slug: cyso-cloud-startup-program
+    offer_slug_aliases: []
+    title: Cyso Cloud Startup Program
+    summary: Eligible startups receive EUR 2,500, EUR 5,000, or EUR 10,000 in Cyso Cloud credits valid for 18 months, plus 20 hours of engineer onboarding.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:55:56.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: EUR 2,500 to EUR 10,000 in cloud credits plus 20 hours of engineer onboarding
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Early-stage startups accepted into the program; the credit tier is assigned by Cyso Cloud.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqdbs0g1n4gfjtt6fyfa7
+      access_operator_entity_id: ent_01kzvrqdbs0g1n4gfjtt6fyfa7
+    access:
+      availability: public
+      method: form
+      url: https://cyso.cloud/startup-program
+    source_ids:
+      - src_d56f4fa37151c138b81903494bbcc34b6e1d5f8d06d4332a98a2e62184cc44d3
