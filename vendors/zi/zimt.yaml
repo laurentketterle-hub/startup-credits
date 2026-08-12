@@ -1,0 +1,56 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzw5gm10f0q706hrkny2yew0
+slug: zimt
+slug_aliases: []
+name: Zimt
+domains:
+  - value: zimt.ai
+    role: primary
+    valid_from: 2026-08-12T23:39:25.000Z
+category: ai-ml
+description: Zimt provides AI-powered market and competitive signal intelligence for product and growth teams.
+links:
+  site: https://zimt.ai
+sources:
+  - source_id: src_a5d92f697a0b6bba32bc9d867120caef9867e9d62f538f340c91d15ff6e5ea41
+    url: https://www.zimt.ai/startup-program
+programs:
+  - program_id: prg_01kzw5gm10rf6nrxwppn5dys9d
+    program_slug: zimt-startup-program
+    program_slug_aliases: []
+    title: Zimt Startup Program
+    summary: Startup program offering discounted Signals+ plans to eligible new customers.
+    source_ids:
+      - src_a5d92f697a0b6bba32bc9d867120caef9867e9d62f538f340c91d15ff6e5ea41
+offers:
+  - offer_id: off_01kzw5gm10jbymydcq3qyz8k0k
+    program_id: prg_01kzw5gm10rf6nrxwppn5dys9d
+    offer_slug: signals-plus-discount
+    offer_slug_aliases: []
+    title: Signals+ Startup Discount
+    summary: Eligible new customers receive 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T23:39:25.000Z
+    economics:
+      benefits:
+        - benefit_id: ben_01
+          description: Eligible new customers receive 60% off Signals+ Annual in year one, 40% in year two, and 30% in year three.
+          kind: discount
+      consideration:
+        kind: none
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: New Zimt customers.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzw5gm10f0q706hrkny2yew0
+      access_operator_entity_id: ent_01kzw5gm10f0q706hrkny2yew0
+    access:
+      availability: public
+      method: form
+      url: https://www.zimt.ai/startup-program
+    source_ids:
+      - src_a5d92f697a0b6bba32bc9d867120caef9867e9d62f538f340c91d15ff6e5ea41
