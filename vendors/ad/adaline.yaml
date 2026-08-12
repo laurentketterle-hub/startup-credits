@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvry8w3nawcy0cf0t321kjy
+slug: adaline
+slug_aliases: []
+name: Adaline
+domains:
+  - value: adaline.ai
+    role: primary
+    valid_from: 2026-08-12T19:59:40.000Z
+category: ai-ml
+description: Adaline provides an AI platform for building and running AI applications with Grow and Custom plans.
+links:
+  site: https://adaline.ai
+sources:
+  - source_id: src_a200e6f5eae161d24e0d0c721b6010448b637b025ca5b8a9a3fcf3eb6a328cbb
+    url: https://www.adaline.ai/pricing
+programs: []
+offers:
+  - offer_id: off_01kzvry8w304hcgw1fev68c8sz
+    offer_slug: adaline-startup-program
+    offer_slug_aliases: []
+    title: Adaline Startup Program
+    summary: Startups receive 50% off Adaline Grow and Custom plans; Grow is listed at USD 750 per month.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:59:40.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% off Grow and Custom plans
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Startups accepted through the Adaline Startup Program; Adaline works with applicants to create the right package.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvry8w3nawcy0cf0t321kjy
+      access_operator_entity_id: ent_01kzvry8w3nawcy0cf0t321kjy
+    access:
+      availability: public
+      method: form
+      url: https://www.adaline.ai/pricing
+    source_ids:
+      - src_a200e6f5eae161d24e0d0c721b6010448b637b025ca5b8a9a3fcf3eb6a328cbb
