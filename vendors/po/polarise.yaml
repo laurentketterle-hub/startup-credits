@@ -1,0 +1,49 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzvrqathjdmqff4yav50wf8v
+slug: polarise
+slug_aliases: []
+name: Polarise
+domains:
+  - value: polarise.eu
+    role: primary
+    valid_from: 2026-08-12T19:55:53.000Z
+category: ai-ml
+description: Polarise provides an AI cloud platform with on-demand GPU compute and AI infrastructure for B2B and AI-native startups.
+links:
+  site: https://polarise.eu
+sources:
+  - source_id: src_da7c9fa5a1a6aa55401d048bbc53e6c0e608ed109109f7047138bd62cfe155a7
+    url: https://polarise.eu/startup-program/
+programs: []
+offers:
+  - offer_id: off_01kzvrqath02r7vgc90qsvt42b
+    offer_slug: build-on-polarise-startup-program
+    offer_slug_aliases: []
+    title: Build on Polarise Startup Program
+    summary: Eligible European B2B and AI-native startups receive staged free GPU hours and AI Cloud credits up to EUR 25,000, plus priority engineering support.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-12T19:55:53.000Z
+    economics:
+      consideration:
+        kind: unknown
+        description: The source record did not establish separate consideration.
+      benefits:
+        - benefit_id: ben_primary
+          description: Up to EUR 25,000 in staged GPU hours and AI Cloud credits
+          kind: other
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: European B2B or AI-native startups that apply through the program; no program fee; eligibility, application, onboarding, and benefit terms are published on the first-party page.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzvrqathjdmqff4yav50wf8v
+      access_operator_entity_id: ent_01kzvrqathjdmqff4yav50wf8v
+    access:
+      availability: public
+      method: form
+      url: https://polarise.eu/startup-program/
+    source_ids:
+      - src_da7c9fa5a1a6aa55401d048bbc53e6c0e608ed109109f7047138bd62cfe155a7
