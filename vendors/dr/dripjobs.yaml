@@ -1,0 +1,33 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzx4h6e9prpqgfzgx8z78kze
+slug: dripjobs
+slug_aliases: []
+name: DripJobs
+domains:
+  - value: dripjobs.com
+    role: primary
+    valid_from: 2026-08-13T08:41:29.000Z
+category: crm-sales
+description: Field service management and CRM software for home service businesses — job scheduling, estimates, invoicing, and customer management.
+links:
+  site: https://dripjobs.com
+sources:
+  - source_id: src_bdaca81160108e76a0e468dd3cb1f35d09bbe0e56a76c7b0b95caf1cb8bdcc31
+    url: https://dripjobs.com/startup-program
+programs:
+  - program_id: prg_01kzx4h6e96erbzeszzw86e17a
+    program_slug: dripjobs-startup-program
+    program_slug_aliases: []
+    title: DripJobs Startup Program
+    summary: Four months of DripJobs free for new businesses that apply within 60 days of incorporation, after verification of incorporation or state licensing documents.
+    source_ids:
+      - src_bdaca81160108e76a0e468dd3cb1f35d09bbe0e56a76c7b0b95caf1cb8bdcc31
+offers:
+  - offer_id: off_01kzx4h6e9wj5dm309sbz997tz
+    program_id: prg_01kzx4h6e96erbzeszzw86e17a
+    offer_slug: four-months-free
+    offer_slug_aliases: []
+    title: Four Months Free
+    summary: Four months of DripJobs free of charge for new businesses started within 60 days of applying. Incorporation or state licensing verification required; franchises and branches not eligible.
+    source_ids:
+      - src_bdaca81160108e76a0e468dd3cb1f35d09bbe0e56a76c7b0b95caf1cb8bdcc31
