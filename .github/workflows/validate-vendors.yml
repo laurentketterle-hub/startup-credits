@@ -1,0 +1,46 @@
+name: Validate Vendor Data
+
+on:
+  pull_request:
+    paths:
+      - 'vendors/**'
+  push:
+    branches: [main, master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PyYAML
+        run: pip install PyYAML
+
+      - name: Validate vendor YAML files
+        run: |
+          python - <<'PY'
+          import glob, sys, yaml
+          files = sorted(glob.glob('vendors/**/*.yaml', recursive=True))
+          if not files:
+              print('No vendor YAML files found under vendors/'); sys.exit(1)
+          ok = True
+          for path in files:
+              try:
+                  with open(path, encoding='utf-8') as fh:
+                      doc = yaml.safe_load(fh)
+                  if not isinstance(doc, dict):
+                      print(f'INVALID (not a mapping): {path}'); ok = False; continue
+                  if 'vendor' not in doc:
+                      print(f'INVALID (missing vendor key): {path}'); ok = False; continue
+                  print(f'OK {path}')
+              except Exception as e:
+                  ok = False
+                  print(f'INVALID {path}: {e}')
+          sys.exit(0 if ok else 1)
+          PY
